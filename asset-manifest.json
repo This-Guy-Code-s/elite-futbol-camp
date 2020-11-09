@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/elite-futbol-camp/static/css/main.9cd3d48c.chunk.css",
-    "main.js": "/elite-futbol-camp/static/js/main.40231b61.chunk.js",
-    "main.js.map": "/elite-futbol-camp/static/js/main.40231b61.chunk.js.map",
-    "runtime-main.js": "/elite-futbol-camp/static/js/runtime-main.73f4340c.js",
-    "runtime-main.js.map": "/elite-futbol-camp/static/js/runtime-main.73f4340c.js.map",
+    "main.js": "/elite-futbol-camp/static/js/main.ffd3ac1f.chunk.js",
+    "main.js.map": "/elite-futbol-camp/static/js/main.ffd3ac1f.chunk.js.map",
+    "runtime-main.js": "/elite-futbol-camp/static/js/runtime-main.b509cdf9.js",
+    "runtime-main.js.map": "/elite-futbol-camp/static/js/runtime-main.b509cdf9.js.map",
     "static/css/2.1a02f21c.chunk.css": "/elite-futbol-camp/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.b145fc13.chunk.js": "/elite-futbol-camp/static/js/2.b145fc13.chunk.js",
-    "static/js/2.b145fc13.chunk.js.map": "/elite-futbol-camp/static/js/2.b145fc13.chunk.js.map",
-    "static/js/3.5871f004.chunk.js": "/elite-futbol-camp/static/js/3.5871f004.chunk.js",
-    "static/js/3.5871f004.chunk.js.map": "/elite-futbol-camp/static/js/3.5871f004.chunk.js.map",
+    "static/js/2.fbaf5617.chunk.js": "/elite-futbol-camp/static/js/2.fbaf5617.chunk.js",
+    "static/js/2.fbaf5617.chunk.js.map": "/elite-futbol-camp/static/js/2.fbaf5617.chunk.js.map",
+    "static/js/3.3152e5cf.chunk.js": "/elite-futbol-camp/static/js/3.3152e5cf.chunk.js",
+    "static/js/3.3152e5cf.chunk.js.map": "/elite-futbol-camp/static/js/3.3152e5cf.chunk.js.map",
     "index.html": "/elite-futbol-camp/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/elite-futbol-camp/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.9cd3d48c.chunk.css.map": "/elite-futbol-camp/static/css/main.9cd3d48c.chunk.css.map",
-    "static/js/2.b145fc13.chunk.js.LICENSE.txt": "/elite-futbol-camp/static/js/2.b145fc13.chunk.js.LICENSE.txt",
+    "static/js/2.fbaf5617.chunk.js.LICENSE.txt": "/elite-futbol-camp/static/js/2.fbaf5617.chunk.js.LICENSE.txt",
     "static/media/header-wave-frame.css": "/elite-futbol-camp/static/media/blueBall.383bba1e.jpg",
     "static/media/map1.b8cc5a6d.png": "/elite-futbol-camp/static/media/map1.b8cc5a6d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.73f4340c.js",
+    "static/js/runtime-main.b509cdf9.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.b145fc13.chunk.js",
+    "static/js/2.fbaf5617.chunk.js",
     "static/css/main.9cd3d48c.chunk.css",
-    "static/js/main.40231b61.chunk.js"
+    "static/js/main.ffd3ac1f.chunk.js"
   ]
 }
