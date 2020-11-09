@@ -8,6 +8,8 @@
     padding-top: 120px;
     margin-right: 0;
 }
+
+
 .hori-timeline .events .event-list:before {
     content: "";
     position: absolute;
@@ -21,10 +23,29 @@
     left: 0;
     right: 0;
     width: 75px;
-    margin: 0 auto;
+    display:flex;
+    margin:0 auto;
+    justify-content:center;
+    align-items:center;
     border-radius: 4px;
     padding: 2px 4px;
+
 }
+
+.event-date{
+    display:flex;
+    flex-direction:row;
+}
+
+
+.event-date i{
+    -webkit-text-fill-color:#448ee4;
+    color:#448ee4;
+    text-shadow:0 0 .1px darkblue;
+    animation:spin 2s linear infinite;
+}
+
+
 @media (min-width: 1140px) {
     .hori-timeline .events .event-list {
         display: inline-block;
@@ -57,3 +78,27 @@
 
 
 
+
+@keyframes spin {
+    from{
+        transform:rotateZ(0deg);
+    }
+
+
+    to{
+        transform:rotateZ(360deg);
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .event-date{
+    display:flex;
+    flex-direction:column;
+}
+
+}

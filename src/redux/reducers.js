@@ -1,7 +1,8 @@
 import heroImage from '../util/imgs/blueBall.jpg'
 import mapp from '../util/imgs/map1.png'
+import iceBall from '../util/imgs/sb1.png'
+import montiel from '../util/imgs/g.jpeg'
 import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
-
 
 
 const initialState = {
@@ -9,6 +10,8 @@ const initialState = {
 	useEnglish:(window.sessionStorage.lango && JSON.parse(window.sessionStorage.lango)) || true,
 	photos:photo_defaults,
 	map:mapp,
+	iceBall:iceBall,
+	montiel:montiel,
 	contact_response:false,
 	sessions:[
 	{age_range:'Ages 3-4',date_length:'Nov14 - Dec19',days_and_time:'Sat:9:00am-10:00am',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-Shirt included'}},
