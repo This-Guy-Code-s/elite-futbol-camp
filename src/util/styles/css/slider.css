@@ -1,0 +1,66 @@
+.mt-100 {
+}
+
+.carousel .carousel-indicators li {
+    display: flex;
+    text-indent: -99px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 2px
+}
+
+
+
+.cor-cor{
+	width:60%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	text-shadow:0 0 5px #000;
+	margin:100px 0px;
+}
+.fig{
+	
+}
+
+
+
+img.slide-photo{
+	width:100%;
+	max-height:500px;
+	min-height:500px;
+	flex:1;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+
+.cor-cor{
+	width:90%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	text-shadow:0 0 5px #000;
+}
+
+
+
+img.slide-photo{
+	width:100%;
+	max-height:300px;
+	min-height:300px;
+	flex:1;
+}
+
+
+
+}

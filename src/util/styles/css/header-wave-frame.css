@@ -1,0 +1,176 @@
+
+
+
+.soccer-hero {
+  position: relative;
+ background-image:linear-gradient(to bottom,rgba(44, 130, 201, .6),rgba(44, 130, 201, .7),rgba(44, 130, 201, 1), rgba(250,250,250,.8), rgba(250,250,250,1)), url('../../imgs/blueBall.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  color: white;
+  width:100%;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+  border:none;
+}
+
+.soccer-content {
+  flex:1;
+  padding: 0 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-shadow:0 0 5px #000;
+  -webkit-text-fill-color:azure;
+  color:azure;
+}
+
+.soccer-content h2{
+  color: rgba(255, 255, 255, 0.9);
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+
+}
+
+.soccer-hero h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 4.5rem;
+  margin: 0 0 10px;
+  line-height: 1;
+  }
+
+.soccer-hero p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
+/* ========================= */
+
+.soccer-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  transition: 500ms;
+}
+
+.soccer-waves::before,
+.soccer-waves::after {
+  content: '';
+  position: absolute;
+  width: 300vw;
+  height: 300vw;
+  top: -65vw;
+  left: 50%;
+  transform: translate(-50%, -75%);
+    transform: translate(-66%, 44%) rotate(360deg);
+}
+
+.soccer-waves::before {
+  border-radius: 44%;
+}
+
+.soccer-waves::after {
+  border-radius: 44%;
+  background: rgba(51, 51, 51, 0.5);
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  
+  100% {
+  }
+}
+
+
+
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #228DFF,
+               0 0 30px  #228DFF,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #228DFF,
+               0 0 15px #228DFF,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+
+
+
+.soccer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soccer-a {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.soccer-btn {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  font-family:oblique;
+  font-weight:bolder;
+  padding:10px 20px;
+  box-shadow:-2px -3px 5px #000;
+  border-radius:5px;
+  background:rgba(146, 232, 248, 0.4);
+  z-index:11;
+
+}
+
+.soccer-btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.soccer-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.soccer-btn:hover:before {
+  left: 100%;
+}
