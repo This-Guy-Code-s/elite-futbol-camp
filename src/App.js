@@ -6,7 +6,7 @@ import Header from './comps/header/'
 import Main from './comps/center/'
 import Footer from './comps/footer/'
 import {connect} from 'react-redux'
-
+import {Route} from 'react-router-dom'
 
 class App extends React.Component{
   constructor(props){
@@ -21,16 +21,23 @@ class App extends React.Component{
 
   render(){
     return (
+      <Route render={()=>{
+        return (
       <div className="App">
 
-     <Header />
+            <Header />
 
       <Main/>
 
 
      <Footer />
-
       </div>
+
+          )
+      }}/>
+
+     
+
     );
   }
 }

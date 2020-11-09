@@ -5,8 +5,8 @@ import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
 
 
 const initialState = {
-	useEnglish:JSON.parse(window.sessionStorage.lango) || true,
 	heroImage:heroImage,
+	useEnglish:(window.sessionStorage.lango && JSON.parse(window.sessionStorage.lango)) || true,
 	photos:photo_defaults,
 	map:mapp,
 	contact_response:false,

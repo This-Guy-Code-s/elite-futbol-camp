@@ -21,11 +21,11 @@ const store = createStore(reducer,applyMiddleware(thunk))
 
 
 ReactDOM.render(
-	<Provider store={store}>
 	<Router>
+	<Provider store={store}>
     <App />
-  </Router>
   </Provider>
+  </Router>
   ,
   document.getElementById('root')
 );
