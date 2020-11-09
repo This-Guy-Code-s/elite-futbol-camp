@@ -2,6 +2,7 @@ import axios from 'axios'
 
 export const PHOTOS = 'PHOTOS'
 export const FORM_MSG = 'FORM_MSG'
+export const LANGO = 'LANGO'
 
 
  export const photo_defaults = [
@@ -71,4 +72,18 @@ export const contact = (obj,num) => dispatch =>{
       console.log(err)
       dispatch({type:FORM_MSG,payload:err})
     })
+}
+
+
+
+
+export const toggle_lango = (b) => dispatch  =>{
+           dispatch({type:LANGO,payload:b})
+          return  window.sessionStorage.setItem('lango',b)
+
+
+
+
+         
+
 }

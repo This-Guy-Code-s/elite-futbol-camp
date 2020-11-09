@@ -1,10 +1,11 @@
 import heroImage from '../util/imgs/blueBall.jpg'
 import mapp from '../util/imgs/map1.png'
-import {PHOTOS,photo_defaults,FORM_MSG} from './actions'
+import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
 
 
 
 const initialState = {
+	useEnglish:JSON.parse(window.sessionStorage.lango) || true,
 	heroImage:heroImage,
 	photos:photo_defaults,
 	map:mapp,
@@ -34,6 +35,14 @@ const reducer = (state = initialState,action) =>{
 			...state,
 			contact_response:action.payload
 		}
+
+		case LANGO:
+		return {
+			...state,
+			useEnglish:action.payload
+		}
+
+
 		default:
 		return state
 	}
