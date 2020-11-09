@@ -25,7 +25,7 @@
     "web-vitals": "^0.2.4"
   },
   "proxy": "http://localhost:3001",
-  "homepage": "https://this-guy-code-s.github.io/elite-futbol-camp/",
+  "homepage": "/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
