@@ -26,6 +26,12 @@ const initialState = {
 	{title:'Outfit Type',desc:'wear athletic gear as shirts wont arrive before first session'},
 	// {title:'Covid',desc:'Parents must wear a mask at all times, Players wear a mask to get inside facility but can take off once training,Parents must sit at K sport parent area which they will be directed'},
 
+	],
+
+	covid:[
+{title:'Parents',desc:'Parents must wear a mask at all times'},
+	{title:'Kids',desc:'Players wear a mask to get inside facility but can take off once training'},
+	{title:'Parents',desc:'Parents must sit at K sport parent area which they will be directed'},
 	]
 
 }
