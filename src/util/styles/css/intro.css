@@ -1,5 +1,7 @@
 .hori-timeline .events {
     border-top: 3px solid #e9ecef;
+    padding-top:50px;
+    margin-top:50px;
 }
 .hori-timeline .events .event-list {
     display: block;
