@@ -30,7 +30,6 @@ class Intro extends React.Component{
     <div className="col-lg-12">
         <div className="card">
             <div className="card-body" id='information'>
-                <Button color='info' className="card-title mb-5 soccer-btn soccer-a" style={{fontFamily:'oblique',fontWeight:'bolder'}} onClick={this.youTube}>Virtual Live Sessions</Button>
                 <h2 className="card-title mb-5 sec-title" style={{fontFamily:'oblique',fontWeight:'bolder'}}>Our Scheduled Sessions</h2>
 
                 <div className="hori-timeline" dir="ltr">
@@ -99,3 +98,10 @@ export default connect(
   mapStateToProps,
   {}
   )(Intro);
+
+
+
+
+
+
+                // <Button color='info' className="card-title mb-5 soccer-btn soccer-a" style={{fontFamily:'oblique',fontWeight:'bolder'}} onClick={this.youTube}>Virtual Live Sessions</Button>
