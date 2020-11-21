@@ -7,7 +7,11 @@
 }
 
 
-
+.Lz{
+  max-width:600px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
 
 .App {
   text-align: center;

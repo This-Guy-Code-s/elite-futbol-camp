@@ -5,7 +5,7 @@ import Curriculum from './curriculum/'
 import Reqs from './Reqs'
 import Covid from './Covid'
 import {Button} from 'reactstrap'
-
+import Lz from './Lz'
 
 
 class Intro extends React.Component{
@@ -81,7 +81,7 @@ Follow this schedule unless told otherwise by coach to come at a different time.
        <Reqs/>
       <Covid/>
       <Curriculum />
-
+      <Lz/>
 </div>
     );
   }

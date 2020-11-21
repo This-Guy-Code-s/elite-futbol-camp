@@ -1,19 +1,18 @@
 import axios from 'axios'
-import Lz from '../util/imgs/Lz.jpeg'
+
 export const PHOTOS = 'PHOTOS'
 export const FORM_MSG = 'FORM_MSG'
 export const LANGO = 'LANGO'
 
- export const photo_defaults = [
-{"id": 1, "url": Lz, "alt": "Elite Futbol Camp", "desc": "Elite Futbol"},
-{"id": 2, "url": "https://thisguycodez.github.io/data/a.jpeg", "alt": "Elite Futbol Camp", "desc": "Elite Futbol"},
-{"id": 3,"url": "https://thisguycodez.github.io/data/b.jpeg", "alt": "Elite Futbol Camp 1", "desc": "Elite Futbol Camp! 1"}, 
-{"id": 4,"url": "https://thisguycodez.github.io/data/c.jpeg", "alt": "Elite Futbol Camp 2", "desc": "Elite Futbol Camp! 2"}, 
-{"id": 5,"url": "https://thisguycodez.github.io/data/d.jpeg", "alt": "Elite Futbol Camp 3", "desc": "Elite Futbol Camp! 3"}, 
-{"id": 6,"url": "https://thisguycodez.github.io/data/e.jpeg", "alt": "Elite Futbol Camp 4", "desc": "Elite Futbol Camp! 4"}, 
-{"id": 7,"url": "https://thisguycodez.github.io/data/soc-f.jpg", "alt": "Elite Futbol Camp 5", "desc": "Elite Futbol Camp! 5"}, 
-{"id":8, "url": "https://thisguycodez.github.io/data/soc-h.jpeg", "alt": "Elite Futbol Camp 6", "desc": "Elite Futbol Camp! 6"},
-{"id": 9, "url": "https://thisguycodez.github.io/data/soc-i.jpeg", "alt": "Elite Futbol Camp 7", "desc": "Elite Futbol Camp! 7"}, {"id": 9, "url": "https://thisguycodez.github.io/data/soc-j.jpeg", "alt": "Elite Futbol Camp 8", "desc": "Elite Futbol Camp! 8"}]
+
+ export const photo_defaults = [{"id": 1, "url": "https://thisguycodez.github.io/data/a.jpeg", "alt": "me and kids", "desc": "Elite Futbol"}, {"id": 2,
+"url": "https://thisguycodez.github.io/data/b.jpeg", "alt": "me and kids 1", "desc": "Elite Futbol Camp! 1"}, {"id": 3,
+"url": "https://thisguycodez.github.io/data/c.jpeg", "alt": "me and kids 2", "desc": "Elite Futbol Camp! 2"}, {"id": 4,
+"url": "https://thisguycodez.github.io/data/d.jpeg", "alt": "me and kids 3", "desc": "Elite Futbol Camp! 3"}, {"id": 5,
+"url": "https://thisguycodez.github.io/data/e.jpeg", "alt": "me and kids 4", "desc": "Elite Futbol Camp! 4"}, {"id": 6,
+"url": "https://thisguycodez.github.io/data/soc-f.jpg", "alt": "me and kids 5", "desc": "Elite Futbol Camp! 5"}, {"id":
+7, "url": "https://thisguycodez.github.io/data/soc-h.jpeg", "alt": "me and kids 6", "desc": "Elite Futbol Camp! 6"},
+{"id": 8, "url": "https://thisguycodez.github.io/data/soc-i.jpeg", "alt": "me and kids 7", "desc": "Elite Futbol Camp! 7"}, {"id": 9, "url": "https://thisguycodez.github.io/data/soc-j.jpeg", "alt": "me and kids 8", "desc": "Elite Futbol Camp! 8"}]
 
 
 
