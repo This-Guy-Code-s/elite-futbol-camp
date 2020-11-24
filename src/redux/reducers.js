@@ -4,16 +4,19 @@ import iceBall from '../util/imgs/sb1.png'
 import montiel from '../util/imgs/g.jpeg'
 import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
 import Lz from '../util/imgs/Lz.jpeg'
-
+import thanksGivenHoliday from '../util/imgs/tgh.png'
 
 const initialState = {
-	heroImage:heroImage,
 	useEnglish:(window.sessionStorage.lango && JSON.parse(window.sessionStorage.lango)) || true,
+
+	heroImage:heroImage,
+	tgh:thanksGivenHoliday,
 	photos:photo_defaults,
 	map:mapp,
 	iceBall:iceBall,
 	montiel:montiel,
 	Lz:Lz,
+
 	contact_response:false,
 	sessions:[
 	{age_range:'Ages 3-4',date_length:'Nov14 - Dec19',days_and_time:'Sat:12:00pm-1:00pm',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-Shirt included'}},

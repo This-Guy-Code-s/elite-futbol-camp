@@ -11,6 +11,8 @@ import PlayerComp from './video-player/Player-holder'
 import Contact from './contact/'
 import Address from './address/'
 
+import MsgBoard from './message-board/'
+
 
 
 
@@ -42,7 +44,7 @@ class Center extends React.Component{
       <section className="center-secs">
       <Contact />
       <Address/>
-      
+      <MsgBoard />
       </section>
       
       </div>
