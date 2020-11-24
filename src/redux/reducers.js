@@ -4,6 +4,7 @@ import iceBall from '../util/imgs/sb1.png'
 import montiel from '../util/imgs/g.jpeg'
 import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
 import Lz from '../util/imgs/Lz.jpeg'
+import Lz1 from '../util/imgs/Lz1.jpeg'
 import thanksGivenHoliday from '../util/imgs/tgh.png'
 
 const initialState = {
@@ -16,6 +17,7 @@ const initialState = {
 	iceBall:iceBall,
 	montiel:montiel,
 	Lz:Lz,
+	Lz1:Lz1,
 
 	contact_response:false,
 	sessions:[

@@ -1,5 +1,4 @@
 import React from 'react'
-// import logo from './logo.svg';
 import {connect} from 'react-redux'
 
 class Lz extends React.Component{
@@ -23,7 +22,8 @@ return (
   <div className="container Lz" >
 
       <div className="un-photo__popup">
-        <img className='img img-thumbnail' src={this.props.Lz} />
+        <img className='img img-thumbnail' src={this.props.Lz} alt='Elite Futbol Camp'/>
+        <img className='img img-thumbnail' src={this.props.Lz1} alt='Elite Futbol Camp'/>
       </div>
 </div>
 
