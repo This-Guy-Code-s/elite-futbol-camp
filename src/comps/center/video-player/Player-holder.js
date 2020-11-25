@@ -30,7 +30,7 @@ const Example = (props) => {
       >
         <Card>
           <CardBody>
-           <Player url='https://www.youtube.com/playlist?list=PLJLHax6Ng-KtQ9SJocnaIMZuVSQ4M-XHS'/>
+           {collapse?<Player url='https://www.youtube.com/playlist?list=PLJLHax6Ng-KtQ9SJocnaIMZuVSQ4M-XHS'/>:''}
           </CardBody>
         </Card>
       </Collapse>
