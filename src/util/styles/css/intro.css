@@ -3,14 +3,19 @@
     padding-top:50px;
     margin-top:50px;
 }
-.hori-timeline .events .event-list {
-    display: block;
+.event-list {
+    display: flex;
     position: relative;
     text-align: center;
     padding-top: 120px;
     margin-right: 0;
 }
 
+
+.list-inline{
+    justify-content:center;
+    align-items:center;
+}
 
 .hori-timeline .events .event-list:before {
     content: "";
@@ -72,7 +77,7 @@ font-weight:600;
 @media (min-width: 1140px) {
     .hori-timeline .events .event-list {
         display: inline-block;
-        width: 24%;
+        width: 30%;
         padding-top: 45px;
     }
     .hori-timeline .events .event-list .event-date {
@@ -102,10 +107,8 @@ font-weight:600;
 .px-5{
     max-width:auto;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin-bottom:100px;
 }
 
 
