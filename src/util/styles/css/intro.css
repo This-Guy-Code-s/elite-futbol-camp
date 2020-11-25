@@ -5,6 +5,8 @@
 }
 .event-list {
     display: flex;
+      justify-content:center;
+    align-items:center;
     position: relative;
     text-align: center;
     padding-top: 120px;
