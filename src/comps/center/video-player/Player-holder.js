@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse, CardBody, Card } from 'reactstrap';
 import Player from './Player'
 
 
@@ -19,14 +19,31 @@ const Example = (props) => {
 
   return (
     <div>
-      <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}><i className="fas fa-photo-video">Toggle</i></Button>
-      <h5>See Videos: {status}{collapse?<i className="fas fa-video"></i>:<i className="fas fa-video-slash"></i>}</h5>
+
+<div className="centerBox">
+  
+  <div className="categoryWrapper">
+    <h1>{status?"Videos":"Videos"}</h1>
+    <button onClick={toggle}>
+      <span>
+        <span>
+          <span data-attr-span={`${collapse?'Hide Videos':'See Videos'}`}>
+            <i className={`fas fa-${collapse?'video-slash':'photo-video'}`}>{collapse?'Hide Videos':'See Videos'}</i>
+          </span>
+        </span>
+      </span>
+    </button>
+  </div>
+  
+</div>
+      
       <Collapse
         isOpen={collapse}
         onEntering={onEntering}
         onEntered={onEntered}
         onExiting={onExiting}
         onExited={onExited}
+        className="vid"
       >
         <Card>
           <CardBody>

@@ -26,6 +26,8 @@ class Player extends React.Component{
 			<ReactPlayer
 			 url={this.props.url}
 			 volume={1}
+			 controls={true}
+			 playing={true}
 			 width={window.innerWidth<700?'100%':'560px'}
 			 />
 

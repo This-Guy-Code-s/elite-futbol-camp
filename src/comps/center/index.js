@@ -4,9 +4,10 @@ import '../../util/styles/css/main.css';
 import {connect} from 'react-redux'
 
 import Intro from './intro/'
+import Lz from './intro/Lz'
 
 import Slider from './slide-show/'
-import PlayerComp from './video-player/Player-holder'
+import VideoPlayerComps from './video-player/Player-holder'
 
 import Contact from './contact/'
 import Address from './address/'
@@ -36,8 +37,21 @@ class Center extends React.Component{
       <Intro />
       </section>
 
+
+      <section className="container center-secs">
+      <Lz/>
+      </section>
+
+
       <section className="center-secs">
-      <PlayerComp />
+      <VideoPlayerComps />
+      </section>
+
+
+      
+
+
+      <section className="container center-secs">
       <Slider />
       </section>
 

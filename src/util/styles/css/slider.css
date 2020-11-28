@@ -13,7 +13,7 @@
 
 
 .cor-cor{
-	width:60%;
+	width:100%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -21,8 +21,8 @@
 	text-shadow:0 0 5px #000;
 	margin:100px 0px;
 }
-.fig{
-	
+.slide{
+	max-width:700px;
 }
 
 
@@ -61,6 +61,10 @@ img.slide-photo{
 	flex:1;
 }
 
+.slide{
+	width:100%;
+	height:100%;
+}
 
 
 }

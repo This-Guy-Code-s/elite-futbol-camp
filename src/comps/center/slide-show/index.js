@@ -64,7 +64,7 @@ const items = props.photos || [
       previous={previous}
       className='cor-cor'
     >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}  className="slide"/>
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />

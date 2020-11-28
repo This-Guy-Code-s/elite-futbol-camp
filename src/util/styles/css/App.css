@@ -48,6 +48,8 @@
   background-size:fill;
   background-repeat:no-repeat;
   background-position:top center;
+  overflow:hidden;
+  overflow-y:auto;
 }
 
 .Main{

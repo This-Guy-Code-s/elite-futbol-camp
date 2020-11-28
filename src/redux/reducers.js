@@ -16,6 +16,17 @@ const initialState = {
 	map:mapp,
 	iceBall:iceBall,
 	montiel:montiel,
+	Lzz:[
+	{
+    url: Lz,
+    alt: 'Slide 1',
+    desc: 'Slide 1'
+  },
+  {
+    url: Lz1,
+    alt: 'Slide 1',
+    desc: 'Slide 1'
+  }],
 	Lz:Lz,
 	Lz1:Lz1,
 
