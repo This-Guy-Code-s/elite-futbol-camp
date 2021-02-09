@@ -43,10 +43,19 @@ class Footer extends React.Component{
                  </div>
                 
              </div>
-             <div className="col-12">
+             <div className="col-6">
                          <ul className="list-unstyled col-xl-12  col-12">
-                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=herbi02-20&keywords=kids indoor soccer shoes&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=f0bc1d6f73e2b4ea2f9176d1db5ef670'><sub><small>(Good For Indoors)</small></sub><br/>Kids Soccer Shoes</a></li>
-                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=herbi02-20&keywords=kids soccer books&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=f8d2d54dbcd8911c17fdccb79424f6be'><sub><small>(Train Your Brain)</small></sub><br/>Kids Soccer Books</a></li>
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=kids indoor soccer shoes&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=64bd576d4b3263cde78e5f9e8bf39840'><sub><small>(Gear)</small></sub><br/>Shoes</a></li>
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=espanol kids soccer books&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=69e5d365378d77291624a83c640fb5a6'><sub><small>(Train Your Brain)</small></sub><br/>Books</a></li>
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=kids soccer pads&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=6fb5a77eb6ee17dfe6d98f539bcffd74'><sub><small>(Protection)</small></sub><br/>Shin Gaurds</a></li>
+                         </ul>
+             
+             </div>
+             <div className="col-6">
+                         <ul className="list-unstyled col-xl-12  col-12">
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=kids soccer pads&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=6fb5a77eb6ee17dfe6d98f539bcffd74'><sub><small>(Protection)</small></sub><br/>Knee Pads</a></li>
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=kids soccer gloves&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=8c549015f1466375f5de9bae1f952694'><sub><small>(Gear)</small></sub><br/>Gloves</a></li>
+                             <li><a href='https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&tag=thisguycodez-20&keywords=kids soccer&index=aps&camp=1789&creative=9325&linkCode=xm2&linkId=6bf98ff64a3eae32b1d79abd01800329'><sub><small>(Equipment)</small></sub><br/>Ball,Goal,Etc.</a></li>
                          </ul>
              
              </div>
