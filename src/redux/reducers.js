@@ -1,81 +1,137 @@
-import heroImage from '../util/imgs/blueBall.png'
-import mapp from '../util/imgs/map1.png'
-import iceBall from '../util/imgs/sb1.png'
+//logo for elitefutbolcamp.org
+import logo from '../util/imgs/logo.png'
+//location map image for elitefutbolcamp.org
+import mapp from '../util/imgs/map.png'
+//coach for elitefutbolcamp - name: montiel
 import montiel from '../util/imgs/g.jpeg'
-import {PHOTOS,photo_defaults,FORM_MSG,LANGO} from './actions'
+//seasons pix
+import summer from '../util/imgs/summer.jpg'
+import winter from '../util/imgs/winter.jpg'
+import spring from '../util/imgs/spring.jpg'
+import fall from '../util/imgs/fall.jpg'
+//seasons pix
+//action type triggers
+import {NAV,LANGO,SUBBED,CLR_SUBBED,MSG_BOARD,MSG_BOARD_BLOCKS,CONTACT_FORM_MSG} from './actions'
+// the coacches 'coach Lz' for proof?..
 import Lz from '../util/imgs/Lz.jpeg'
 import Lz1 from '../util/imgs/Lz1.jpeg'
-import thanksGivenHoliday from '../util/imgs/tgh.png'
 
+
+//language json obj
+import language from './language.json'
+
+
+console.log(language)
+//redux state
 const initialState = {
-	useEnglish:(window.sessionStorage.lango && JSON.parse(window.sessionStorage.lango)) || true,
+	nav_state:false,
+	// app language currently being used (big blocks of text only)
+	app_language:language,
+	//english or spanish language trigger
+	useSpanish:window.sessionStorage.useSpanish?true:false,
 
-	heroImage:heroImage,
-	tgh:thanksGivenHoliday,
-	photos:photo_defaults,
-	map:mapp,
-	iceBall:iceBall,
+	//images---------------------------------
 	montiel:montiel,
-	Lzz:[
-	{
-    url: Lz,
-    alt: 'Slide 1',
-    desc: 'Slide 1'
-  },
-  {
-    url: Lz1,
-    alt: 'Slide 1',
-    desc: 'Slide 1'
-  }],
 	Lz:Lz,
 	Lz1:Lz1,
+	logo:logo,
+	map:mapp,
+	//slide show photos
+	photos:[
+			{"id": 1, "url": "https://thisguycodez.github.io/data/a.jpeg", "alt": "me and kids", "desc": "Elite Futbol"}, 
+			{"id": 2,"url": "https://thisguycodez.github.io/data/b.jpeg", "alt": "me and kids 1", "desc": "Elite Futbol Camp! 1"}, 
+			{"id": 3,"url": "https://thisguycodez.github.io/data/c.jpeg", "alt": "me and kids 2", "desc": "Elite Futbol Camp! 2"}, 
+			{"id": 4,"url": "https://thisguycodez.github.io/data/d.jpeg", "alt": "me and kids 3", "desc": "Elite Futbol Camp! 3"}, 
+			{"id": 5,"url": "https://thisguycodez.github.io/data/e.jpeg", "alt": "me and kids 4", "desc": "Elite Futbol Camp! 4"}, 
+			{"id": 6,"url": "https://thisguycodez.github.io/data/soc-f.jpg", "alt": "me and kids 5", "desc": "Elite Futbol Camp! 5"}, 
+			{"id":7, "url": "https://thisguycodez.github.io/data/soc-h.jpeg", "alt": "me and kids 6", "desc": "Elite Futbol Camp! 6"},
+			{"id": 8, "url": "https://thisguycodez.github.io/data/soc-i.jpeg", "alt": "me and kids 7", "desc": "Elite Futbol Camp! 7"}, 
+			{"id": 9, "url": "https://thisguycodez.github.io/data/soc-j.jpeg", "alt": "me and kids 8", "desc": "Elite Futbol Camp! 8"}
+		   ],
 
-	contact_response:false,
-	sessions:[
-	{age_range:'Ages 3-4',date_length:'Nov14 - Dec19',days_and_time:'Sat:12:00pm-1:00pm',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-Shirt included'}},
-	{age_range:'Ages 5-6',date_length:'Nov14 - Dec19',days_and_time:'Sat:9:00am-10:00am',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-shirts included'}},
-	{age_range:'Ages 7-9',date_length:'Nov14 - Dec19',days_and_time:'Sat:10:00am-11:00am',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-shirts included'}},
-	{age_range:'Ages 10-14',date_length:'Nov14 - Dec19',days_and_time:'Sat:11:00am-12:00pm',requirements:'Includes 6 sessions with 2 coaches',price:'Cost $130.00',includes:{booli:true,text:'with T-shirts included'}}
+   	seasons_pix:{
+   		summer:summer,
+   		winter:winter,
+   		spring:spring,
+   		fall:fall,
+   	},
+	//images---------------------------------
 
-	],
 
-	reqs:[
-	{title:'No cleats',desc:'sneakers are ok but not the best for indoor'},
-	{title:'Outfit Type',desc:'wear athletic gear as shirts wont arrive before first session'},
-	// {title:'Covid',desc:'Parents must wear a mask at all times, Players wear a mask to get inside facility but can take off once training,Parents must sit at K sport parent area which they will be directed'},
+	//subscribers form results
+	sub_form_response:false,
+	sub_msg:"",
 
-	],
 
-	covid:[
-{title:'Parents',desc:'Parents must wear a mask at all times'},
-	{title:'Kids',desc:'Players wear a mask to get inside facility but can take off once training'},
-	{title:'Parents',desc:'Parents must sit at K sport parent area which they will be directed'},
-	]
+
+	//message board functionality toggle
+	msg_board_state:false,
+
+
+	//contact form trigger response...allows better UX for success msg or error handling
+	contact_form_response:false,
+	contact_msg:'',
+	
+
+	
+
 
 }
 
 
 
 const reducer = (state = initialState,action) =>{
-	switch(action){
-		case PHOTOS:
-		return {
-			...state,
-			photos:action.payload
-		}
+	switch(action.type){
 
-		case FORM_MSG:
+
+
+		case NAV:
 		return {
 			...state,
-			contact_response:action.payload
+			nav_state:action.payload
 		}
 
 		case LANGO:
 		return {
 			...state,
-			useEnglish:action.payload
+			useSpanish:action.payload
 		}
 
+
+		case SUBBED:
+		return {
+			...state,
+			sub_form_response:true,
+			sub_msg:action.payload
+		}
+
+		case CLR_SUBBED:
+		return {
+			...state,
+			sub_form_response:false,
+			sub_msg:action.payload
+		}
+
+
+	
+		case MSG_BOARD:
+		return {
+			...state,
+			msg_board_state:action.payload
+		} 
+
+		case MSG_BOARD_BLOCKS:
+		return {
+			...state,
+			msg_board_blocks:action.payload
+		} 
+
+
+		case CONTACT_FORM_MSG:
+		return {
+			...state,
+			contact_msg:action.payload
+		}
 
 		default:
 		return state

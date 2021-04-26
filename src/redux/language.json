@@ -1,0 +1,147 @@
+{
+"intro":{
+"english":{
+"sign-up-msg":"Hello everyone! Come join our camp and have your kids do something fun and rewarding this summer",
+"contact-us-msg":"They will learn from professional coaches with real experience...",
+"learn-more-msg":"Coaches will teach and help kids learn individual and team skills",
+"sports-shop-msg":"Be prepared and check the sports shop for things you might need"
+},
+"spanish":{
+"sign-up-msg":"Hola a todos! Ven y únete a nuestro campamento y haz que tus hijos hagan algo divertido y gratificante este verano.",
+"contact-us-msg":"Aprenderán de entrenadores profesionales con experiencia real ...",
+"learn-more-msg":"Los entrenadores enseñarán y ayudarán a los niños a aprender habilidades individuales y de equipo.",
+"sports-shop-msg":"Esté preparado y busque en la tienda de deportes lo que pueda necesitar."
+}
+},
+
+
+
+
+
+
+"home":{
+"top-banner":{
+"english":{
+"welcome-msg":"EliteFutbolCamp is the best place for your kids to get active and learn soccer.",
+"team-work-msg":"We will learn, grow, and evolve as a team."
+},
+"spanish":{
+"welcome-msg":"EliteFutbolCamp es el mejor lugar para que sus hijos se pongan activos y aprendan fútbol.",
+"team-work-msg":"Aprenderemos, creceremos y evolucionaremos como equipo."
+}
+}
+},
+
+
+
+
+
+
+"msg_board_blocks":{
+"kids":[{
+"english":{
+"title":"Covid",
+"active_when":"Always",
+"msg":"Players wear a mask to get inside facility but can take off once training.",
+"posted":"Nov 20th 2020"
+},
+"spanish":{
+"title":"COVID-19",
+"active_when":"Siempre",
+"msg":"Los jugadores usan una máscara para ingresar a las instalaciones, pero pueden despegar una vez que entrenan",
+"posted":"20 de noviembre de 2020"
+}
+},
+{
+"english":{
+"title":"Outfit",
+"active_when":"Always",
+"msg":"Sneakers are ok but not the best for indoor. Wear athletic gear as shirts wont arrive before first session.",
+"posted":"Nov 20th 2020"
+},
+"spanish":{
+"title":"Atuendo",
+"active_when":"Siempre",
+"msg":"Las zapatillas están bien, pero no son las mejores para interiores. Use equipo deportivo ya que las camisetas no llegarán antes de la primera sesión.",
+"posted":"20 de noviembre de 2020"
+}
+}],
+"parents":[{
+"english":{
+"title":"Covid",
+"active_when":"Always",
+"msg":" Parents must wear a mask at all times.",
+"posted":"Nov 20th 2020"
+},
+"spanish":{
+"title":"COVID-19",
+"active_when":"Siempre",
+"msg":"Los padres deben usar una máscara en todo momento.",
+"posted":"20 de noviembre de 2020"
+}
+},{
+"english":{
+"title":"Directions",
+"active_when":"Now",
+"msg":" Parents must sit at K sport parent area which they will be directed.",
+"posted":"Nov 20th 2020"
+},
+
+"spanish":{
+"title":"Direcciones",
+"active_when":"Ahora",
+"msg":"Los padres deben sentarse en el área para padres de K sport a la que serán dirigidos",
+"posted":"20 de noviembre de 2020"
+}
+}],
+
+"company":[],
+"service":[],
+"events":[],
+
+"timeoff":[{
+"english":{
+"title":"Thanks Giving",
+"active_when":"Nov 26th-30th 2020",
+"msg":" Due to the Holiday's, we are off this weekend, meaning there are no sessions taking place. Enjoy Your Holiday Everyone!",
+"posted":"Nov 23rd 2020"
+},
+"spanish":{
+"title":"Tiempo libre",
+"active_when":"26-30 de noviembre de 2020",
+"msg":"Debido a las vacaciones, estamos fuera de esto. fin de semana, lo que significa que no hay sesiones que tienen lugar. Disfruten de sus vacaciones todos!",					                "posted":"23 de noviembre de 2020"
+}
+}]
+},
+
+
+
+
+
+
+"about_us_blocks":{
+"top":{
+"english":{
+"a":"Elite Futbol Camp is a futbol(soccer) campfor kids between the ages of 3-14. Ran by professional coaches with real experience.The camp is based in Northern Virginia and is aperfect place for your kids to get out an have fun the safe way. Especially during these timeswe are in now.",
+"b1":"Kids will be taught the fundamental skills to use, getting a great exercise, and most of all interacting/getting together; learning team work. Feel free to give us a call anytime",
+"b2":"to check in on our schedules. You can also just visit this application to view it as well. We open within seasons as you see below....."
+},
+
+"spanish":{
+"a":"Elite Futbol Camp es un campamento de futbol (soccer) para niños de entre 3 y 14 años. Dirigido por entrenadores profesionales con experiencia real. El campamento tiene su sede en el norte de Virginia y es un lugar perfecto para que sus hijos salgan y tengan divertirse de forma segura. Especialmente durante estos tiempos estamos en ahora.",
+"b1":"A los niños se les enseñarán las habilidades fundamentales para usar, hacer un gran ejercicio y, sobre todo, interactuar / reunirse; aprendizaje del trabajo en equipo. No dudes en llamarnos en cualquier momento",
+"b2":"para consultar nuestros horarios. También puede visitar esta aplicación para verla también. Abrimos dentro de las temporadas como ves a continuación ....."
+}
+},
+"cur":{
+"english":{
+"a":"Our Curriculum consist of the listed ways and skills we teach below. We take extra safety precautions, especially based on age. All coaches are professionals, licensed, and experienced. Ever since the pandemic started, we have been taking extra precautions for child and environment safety."
+},
+
+"spanish":{
+"a":"Nuestro plan de estudios consta de las formas y habilidades enumeradas que enseñamos a continuación. Tomamos precauciones de seguridad adicionales, especialmente basadas en la edad. Todos los entrenadores son profesionales, con licencia y con experiencia. Desde que comenzó la pandemia, hemos estado tomando precauciones adicionales para la seguridad de los niños y el medio ambiente."
+}
+}
+}
+
+}

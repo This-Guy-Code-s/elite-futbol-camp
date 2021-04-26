@@ -1,12 +1,11 @@
 import React from 'react'
-// import logo from './logo.svg';
 import './util/styles/css/App.css';
-import './util/styles/css/snow-and-wind.css';
-import Header from './comps/header/'
-import Main from './comps/center/'
-import Footer from './comps/footer/'
+import Intro from './comps/intro/'
+import Home from './comps/home/'
 import {connect} from 'react-redux'
 import {Route} from 'react-router-dom'
+import About from './comps/about/'
+import {toggle_msg_board} from './redux/actions'
 
 class App extends React.Component{
   constructor(props){
@@ -20,23 +19,41 @@ class App extends React.Component{
 
   render(){
     return (
-      <Route render={()=>{
+      <div className="efc">
+
+
+
+
+      <Route exact path='/' render={()=>{
         return (
       <div className="App">
-
-            <Header />
-
-      <Main/>
-
-
-     <Footer />
+            <Intro />
       </div>
-
           )
       }}/>
 
-     
 
+      <Route exact path='/home' render={()=>{
+        return (
+      <div className="App">
+            <Home />
+            <label className="btn mb-btn mb-btn-open" htmlFor="nav" onClick={()=>{return this.props.toggle_msg_board(this.props.msg_board_state)}}>{this.props.useSpanish?"Tablero de mensajes":"Message Board"}</label>
+
+      </div>
+          )
+      }}/>
+
+
+            <Route exact path='/about' render={()=>{
+        return (
+      <div className="contianer-fluid About">
+            <About />
+
+      </div>
+          )
+      }}/>
+
+      </div>
     );
   }
 }
@@ -51,5 +68,5 @@ const mapStateToProps = state =>{
 
 export default connect(
   mapStateToProps,
-  {}
+  {toggle_msg_board}
   )(App);
