@@ -18,9 +18,9 @@ TabFunctions()
   render(){
 
 
-    return ( 
+    return (
       <div className="container container-sessions">
-  <span className="abt-title"><h3>{this.props.useSpanish?'Sesiones programadas':'Scheduled Sessions'}</h3></span>
+  <span className="abt-title" id='sessions'><h3>{this.props.useSpanish?'Sesiones programadas':'Scheduled Sessions'}</h3></span>
   <p>
 {this.props.useSpanish?'Nuestras últimas Sesiones ...':'Our latest Sessions....'}
   </p>
@@ -31,13 +31,13 @@ TabFunctions()
       <button className="accordion-tab" data-actab-group="0" data-actab-id="2"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'7-9 años':'Ages 7-9'}</button>
       <button className="accordion-tab" data-actab-group="0" data-actab-id="3"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'10-14 años':'Ages 10-14'}</button>
     </section>
-    <section className="accordion-content">
+    <section className="accordion-content" id='cost'>
       <article className="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
         <h4 className="accordion-item__label"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'10-14 años':'Ages 3-4'}
 </h4>
         <div className="accordion-item__container">
           <p>
-            
+
           <b>{this.props.useSpanish?'14 de noviembre - 19 de diciembre':'Nov14 - Dec19'}</b><br/>
 <b>{this.props.useSpanish?'Sábado:12:00pm - 1:00pm':'Sat:12:00pm-1:00pm'}</b><br/>
 
@@ -52,7 +52,7 @@ TabFunctions()
         <h4 className="accordion-item__label"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'10-14 años':'Ages 5-6'}</h4>
         <div className="accordion-item__container">
           <p>
-            
+
           <b>{this.props.useSpanish?'14 de noviembre - 19 de diciembre':'Nov14 - Dec19'}</b><br/>
 <b>{this.props.useSpanish?'Sábado:9:00am - 10:00am':'Sat:9:00am-10:00am'}</b><br/>
 
@@ -67,7 +67,7 @@ TabFunctions()
         <h4 className="accordion-item__label"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'10-14 años':'Ages 7-9'}</h4>
          <div className="accordion-item__container">
           <p>
-            
+
           <b>{this.props.useSpanish?'14 de noviembre - 19 de diciembre':'Nov14 - Dec19'}</b><br/>
 <b>{this.props.useSpanish?'Sábado:10:00am - 11:00am':'Sat:10:00am-11:00am'}</b><br/>
 
@@ -82,7 +82,7 @@ TabFunctions()
         <h4 className="accordion-item__label"><i className="fas fa-futbol sb"></i>{this.props.useSpanish?'10-14 años':'Ages 10-14'}</h4>
          <div className="accordion-item__container">
           <p>
-            
+
           <b>{this.props.useSpanish?'14 de noviembre - 19 de diciembre':'Nov14 - Dec19'}</b><br/>
 <b>{this.props.useSpanish?'Sábado:11:00am - 12:00pm':'Sat:11:00am-12:00pm'}</b><br/>
 
@@ -93,7 +93,7 @@ TabFunctions()
           </p>
         </div>
       </article>
-      
+
     </section>
   </section>
   </div>
@@ -119,5 +119,3 @@ mapStateToProps
 ,
   {}
   )(Sessions)
-
-

@@ -2,6 +2,7 @@
 import {connect} from 'react-redux'
 import {nav_toggle} from '../../redux/actions'
 import {Link} from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link'
 import Contact from '../contact/'
 
 
@@ -31,7 +32,7 @@ componentDidMount(){
   background-color:#fff;
   overflow:hidden;
   overflow-y:auto;
-  `  
+  `
 }
 
 
@@ -49,21 +50,23 @@ componentDidMount(){
     </svg>
   </label>
   <ol className='menu__content' style={{display:this.props.nav_state?'block':'none'}}>
-    <li className="menu-item"><Link to="/home" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Hogar":"Home"}</Link></li>
-    <li className="menu-item"><Link to="/" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Intro":"Intro"}</Link></li>
+    <li className="menu-item">
+      <Link to="/home" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Hogar":"Home"}</Link></li>
+    <li className="menu-item">
+      <Link to="/" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Intro":"Intro"}</Link></li>
     <li className="menu-item">
       <Link to="/about" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Acerca de":"About"}</Link>
       <ol className="sub-menu">
-        <li className="menu-item"><a href="#0">{this.props.useSpanish?"Plan de estudios":"Curriculum"}</a></li>
-        <li className="menu-item"><a href="#0">{this.props.useSpanish?"Sesiones":"Sessions"}</a></li>
-        <li className="menu-item"><a href="#0">{this.props.useSpanish?"Costo":"Cost"}</a></li>
+        <li className="menu-item"><HashLink to="/about#curriculum" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Plan de estudios":"Curriculum"}</HashLink></li>
+      <li className="menu-item"><HashLink to="/about#sessions" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Sesiones":"Sessions"}</HashLink></li>
+    <li className="menu-item"><HashLink to="/about#cost" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Costo":"Cost"}</HashLink></li>
       </ol>
     </li>
     <li className="menu-item">
      <Contact/>
-     
+
     </li>
-    <li className="menu-item"><a href="#0">{this.props.useSpanish?"Tienda de deportes":"Sports Store"}</a></li>
+    <li className="menu-item"><a href="/#"  onClick={()=>{alert('Under Construction, Come back another time...')}}>{this.props.useSpanish?"Tienda de deportes":"Sports Store"}</a></li>
   </ol>
 </nav>
 
@@ -86,5 +89,3 @@ mapStateToProps
 ,
   {nav_toggle}
   )(TopBanner)
-
-

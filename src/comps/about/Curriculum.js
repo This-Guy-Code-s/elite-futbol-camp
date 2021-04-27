@@ -15,7 +15,7 @@ class Curriculum extends React.Component{
   render(){
     return (
   <article className="container content">
-  <span className="abt-title"><h3>{this.props.useSpanish?'Nuestro plan de estudios':'Our Curriculum'}</h3></span>
+  <span className="abt-title" id='curriculum'><h3>{this.props.useSpanish?'Nuestro plan de estudios':'Our Curriculum'}</h3></span>
    <p>
    {this.props.useSpanish?this.props.app_language.about_us_blocks.cur.spanish.a:this.props.app_language.about_us_blocks.cur.english.a}
  </p>
@@ -47,7 +47,7 @@ class Curriculum extends React.Component{
                             <div className="">{this.props.useSpanish?'Recepción':'Receiving'}</div>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
        </div>
@@ -71,14 +71,14 @@ class Curriculum extends React.Component{
                             <div className="">{this.props.useSpanish?'Juego combinado':'Combination Play'}</div>
                         </div>
                     </div>
-                    
+
                     <div className="tl-item">
                         <div className="tl-dot b-primary"></div>
                         <div className="tl-content">
                             <div className="">{this.props.useSpanish?'Disparo y remate':'Shooting and Finishing'}</div>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
        </div>

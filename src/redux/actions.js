@@ -23,7 +23,7 @@ export const MSG_BOARD_BLOCKS = 'MSG_BOARD_BLOCKS'
 //Contact type query
 export const CONTACT_FORM_MSG = 'FORM_MSG'
 
-// USING REACT_APP_API_TEST AT THE MOMENT OF BUILD
+// USING REACT_APP_API AT THE MOMENT OF BUILD
 
 
 
@@ -70,14 +70,14 @@ export const subscribing = (email) => dispatch =>{
 
 let in_spanish = window.sessionStorage.useSpanish?true:false
 
-  //valid email regexp 
+  //valid email regexp
   const regi = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-  
+
   //is it a valid email?
   if(regi.test(email)){
 
     //if so then send email into server code to process
-    return axios.post(`${process.env.REACT_APP_API_TEST}sub/user`,{email})
+    return axios.post(`${process.env.REACT_APP_API}sub/user`,{email})
       .then((res)=>{
           // good response should be a thank you message
           console.log(res.data)
@@ -124,7 +124,7 @@ let in_spanish = window.sessionStorage.useSpanish?true:false
 //clearing the subscriber input an response msg content
 export const clear_sub = () => dispatch =>{
 return dispatch({type:CLR_SUBBED,payload:""})
-} 
+}
 
 
 
@@ -153,7 +153,7 @@ export const contact = (obj) => dispatch =>{
   //which language?
   let useSpanish = window.sessionStorage.useSpanish?true:false
 
-   //valid email regexp 
+   //valid email regexp
   const email_regi = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
   //valid characters used
   const char = /[A-z]/
@@ -175,8 +175,8 @@ export const contact = (obj) => dispatch =>{
   else if(email_error)dispatch({type:CONTACT_FORM_MSG,payload:useSpanish?'Este no es un email valido.':'This is not a valid email.'})
 
     //send out mail through server...
-    return axios.post(`${process.env.REACT_APP_API_TEST}contact`,obj)
-          //error on smpt specifically 
+    return axios.post(`${process.env.REACT_APP_API}contact`,obj)
+          //error on smpt specifically
           .then((res)=>{
             console.log(res)
             if(!/sent/gi.test(res.data))dispatch({type:CONTACT_FORM_MSG,payload:useSpanish?'El servidor está funcionando, inténtelo de nuevo más tarde.':'Server is worked up, try again later.'})
@@ -189,16 +189,3 @@ export const contact = (obj) => dispatch =>{
             dispatch({type:CONTACT_FORM_MSG,payload:useSpanish?'El servidor está funcionando, inténtelo de nuevo más tarde.':'Server is worked up, try again later.'})
           })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
