@@ -9,7 +9,7 @@ class Mapp extends Component {
   render() {
     return (
       <figure>
-      <img className='img img-thumbnail' src={this.props.map} alt='elite futbol camp'/>
+      <img className='img img-thumbnail mapx' src={this.props.map} alt='elite futbol camp' onClick={()=>{window.open('https://www.google.com/maps/place/K+Sports+Complex/@38.7374887,-77.5275404,17z','_blank')}}/>
       </figure>
     );
   }

@@ -1,0 +1,43 @@
+{
+    "clothes":{
+      "boys":{
+      "english":[],
+      "spanish":[]
+      },
+
+      "girls":{
+      "english":[],
+      "spanish":[]
+      }
+    },
+
+
+    "shoes":{
+      "boys":{
+      "english":[],
+      "spanish":[]
+      },
+
+      "girls":{
+      "english":[],
+      "spanish":[]
+      }
+    },
+
+    "protection":{
+      "all":{
+      "english":[],
+      "spanish":[]
+      }
+
+    },
+
+
+    "misc":{
+      "all":{
+      "english":[],
+      "spanish":[]
+      }
+    }
+
+}

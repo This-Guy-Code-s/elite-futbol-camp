@@ -26,7 +26,7 @@ class AbtTxt extends React.Component{
 <hr className="abt"/>
 
 
-<p> {this.props.useSpanish?this.props.app_language.about_us_blocks.top.spanish.b1:this.props.app_language.about_us_blocks.top.english.b1}<a href='tel://+17038612400' style={{WebkitTextFillColor:'blue'}}>(703)-861-2400</a> {this.props.useSpanish?this.props.app_language.about_us_blocks.top.spanish.b2:this.props.app_language.about_us_blocks.top.english.b2}</p>
+<p> {this.props.useSpanish?this.props.app_language.about_us_blocks.top.spanish.b1:this.props.app_language.about_us_blocks.top.english.b1}<a href='tel://+17038612400' style={{WebkitTextFillColor:'blue'}}> (703)-861-2400</a> {this.props.useSpanish?this.props.app_language.about_us_blocks.top.spanish.b2:this.props.app_language.about_us_blocks.top.english.b2}</p>
 </article>
 
 
@@ -54,5 +54,3 @@ mapStateToProps
 ,
   {}
   )(AbtTxt)
-
-

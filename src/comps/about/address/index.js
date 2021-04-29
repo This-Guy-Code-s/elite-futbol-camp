@@ -13,13 +13,13 @@ constructor(props){
     return (
      <div>
      <address>
-Phone <a href="tel:7036812400">(703)-861-2400</a>.<br/>
-Email: <a href="mailto:elitefutbolmontiel@gmail.com">elitefutbolmontiel@gmail.com</a><br/>
-Address:<br/>
-K Sport Complex<br/>
-10103 residency rd. <br/>
-manassas va<br/>
-20110, USA
+{this.props.useSpanish?'Teléfono':'Phone'}: <a href="tel:7036812400">(703)-861-2400</a>.<br/>
+{this.props.useSpanish?'Correo electrónico':'Email'}: <a href="mailto:elitefutbolmontiel@gmail.com">elitefutbolmontiel@gmail.com</a><br/>
+{this.props.useSpanish?'Habla a':'Address'}:<br/>
+{this.props.useSpanish?'Complejo deportivo K':'K Sport Complex'}<br/>
+{this.props.useSpanish?'10103 residencia rd.':'10103 residency rd.'}<br/>
+{/*SPANISH & ENGLISH RETURNS THE SAME HERE.. >>*/}manassas va<br/>
+{this.props.useSpanish?'20110, EE. UU.':'20110, USA'}
 </address>
 <Mapp/>
      </div>

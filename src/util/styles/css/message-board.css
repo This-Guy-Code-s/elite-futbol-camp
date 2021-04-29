@@ -569,6 +569,21 @@
   min-height:100%;
   }
 
+    .mb-nav {
+      width:0;
+      min-height: 100%;
+      max-height: 100%;
+      display: grid;
+      grid-template-rows: 7% 40% auto;
+      grid-template-columns: 100%;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 300ms ease-out, width 0ms 300ms, height 0ms 300ms;
+    }
+
 
   .alert-message
   {

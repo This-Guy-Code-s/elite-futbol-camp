@@ -2,6 +2,7 @@
 import {connect} from 'react-redux'
 import {nav_toggle} from '../../redux/actions'
 import {Link} from 'react-router-dom'
+import {withRouter} from 'react-router'
 import {HashLink} from 'react-router-hash-link'
 import Contact from '../contact/'
 
@@ -62,11 +63,13 @@ componentDidMount(){
     <li className="menu-item"><HashLink to="/about#cost" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Costo":"Cost"}</HashLink></li>
       </ol>
     </li>
-    <li className="menu-item">
+    <li className="menu-item" id='contact'>
      <Contact/>
 
     </li>
-    <li className="menu-item"><a href="/#"  onClick={()=>{alert('Under Construction, Come back another time...')}}>{this.props.useSpanish?"Tienda de deportes":"Sports Store"}</a></li>
+    <li className="menu-item">
+    <Link to="/store" onClick={()=>{return this.props.nav_toggle(true)}}>{this.props.useSpanish?"Tienda de deportes":"Sports Store"}</Link>
+    </li>
   </ol>
 </nav>
 
@@ -84,8 +87,8 @@ const mapStateToProps = state =>{
 }
 
 
-export default connect(
+export default withRouter(connect(
 mapStateToProps
 ,
   {nav_toggle}
-  )(TopBanner)
+  )(TopBanner))

@@ -22,11 +22,11 @@ const Contact = (props) => {
     <div className='modal-x'>
        <span onClick={toggle}>{props.useSpanish?"Contacto":"Contact"}</span>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle} charCode=''>{props.contact_msg_state?props.contact_msg:''}<i className="fas fa-eye-slash"></i></ModalHeader>
+        <ModalHeader toggle={toggle} charCode='' title='Hide...'>{props.contact_msg_state?props.contact_msg:''}<i className="fas fa-eye-slash"></i></ModalHeader>
 
         <Form />
-<p className="result-message centered">Thank you for your message</p>       
-     
+<p className="result-message centered">Thank you for your message</p>
+
       </Modal>
     </div>
   );

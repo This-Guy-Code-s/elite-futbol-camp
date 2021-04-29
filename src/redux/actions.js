@@ -23,7 +23,16 @@ export const MSG_BOARD_BLOCKS = 'MSG_BOARD_BLOCKS'
 //Contact type query
 export const CONTACT_FORM_MSG = 'FORM_MSG'
 
-// USING REACT_APP_API AT THE MOMENT OF BUILD
+
+
+//store keys
+export const STORE_CATAGORY = 'STORE_CATAGORY'
+export const STORE_GENDER = 'STORE_GENDER'
+export const STORE_RENDER_NEW_LIST = 'STORE_RENDER_NEW_LIST'
+
+
+
+// USING REACT_APP_API_TEST AT THE MOMENT OF BUILD
 
 
 
@@ -77,7 +86,7 @@ let in_spanish = window.sessionStorage.useSpanish?true:false
   if(regi.test(email)){
 
     //if so then send email into server code to process
-    return axios.post(`${process.env.REACT_APP_API}sub/user`,{email})
+    return axios.post(`${process.env.REACT_APP_API_TEST}sub/user`,{email})
       .then((res)=>{
           // good response should be a thank you message
           console.log(res.data)
@@ -175,7 +184,7 @@ export const contact = (obj) => dispatch =>{
   else if(email_error)dispatch({type:CONTACT_FORM_MSG,payload:useSpanish?'Este no es un email valido.':'This is not a valid email.'})
 
     //send out mail through server...
-    return axios.post(`${process.env.REACT_APP_API}contact`,obj)
+    return axios.post(`${process.env.REACT_APP_API_TEST}contact`,obj)
           //error on smpt specifically
           .then((res)=>{
             console.log(res)
@@ -188,4 +197,38 @@ export const contact = (obj) => dispatch =>{
             console.log(err)
             dispatch({type:CONTACT_FORM_MSG,payload:useSpanish?'El servidor está funcionando, inténtelo de nuevo más tarde.':'Server is worked up, try again later.'})
           })
+}
+
+
+
+
+
+
+
+
+
+
+
+//sports store functionings
+
+//catagory choice [clothes,shoes,protection,& misc]
+export const choose_catagory = (catagory) => dispatch =>{
+  window.sessionStorage.catagory = catagory.toLowerCase()
+  return dispatch({type:STORE_CATAGORY,payload:catagory.toLowerCase()})
+}
+
+//gender choice [boys,girls,& all]
+export const choose_gender = (gender) => dispatch =>{
+  window.sessionStorage.gender = gender.toLowerCase()
+  return dispatch({type:STORE_GENDER,payload:gender.toLowerCase()})
+}
+
+/* render the new filtered requested stock
+list based on data pulled*/
+export const render_new_list = (catagory,gender,stock) => dispatch =>{
+  let useSpanish = window.sessionStorage.useSpanish?'spanish':'english'
+  let list = stock[catagory][gender][useSpanish]
+
+
+  return dispatch({type:STORE_RENDER_NEW_LIST,payload:list})
 }

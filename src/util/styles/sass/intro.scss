@@ -9,7 +9,7 @@ $font: 'Abril Fatface', sans-serif;
 $slides: 4;
 $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/skills.jpg')  url('../../imgs/shop.jpg');
 
-.untitled{	
+.untitled{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -26,7 +26,7 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 	}
 	animation: rotateHue infinite $t*$slides*2 linear;
 	animation-delay: $t/4;
-	
+
 	&__shutters{
 		position: absolute;
 		height: 150vmax;
@@ -72,14 +72,14 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 			animation: openBottom $t*2 infinite;
 		}
 	}
-	
+
 	&__slides{
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		top: 0;
 		left: 0;
-		background-color: $color;
+		background-color: black;
 	}
 	&__slide{
 		position: absolute;
@@ -88,7 +88,7 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 		opacity: 0;
 		@keyframes showHideSlide{
 			0%{
-				opacity: 1; 
+				opacity: 1;
 				pointer-events: auto;
 				z-index: 1;
 			}
@@ -105,12 +105,17 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 		}
 		animation: showHideSlide infinite $t*$slides*2 steps(1);
 		@for $i from 1 through $slides{
-			&:nth-child(#{$i}){ 
+			&:nth-child(#{$i}){
 				animation-delay: $t * ($i - 1) * 2;
 				.untitled__slideBg{
 					background-image: nth($images, $i);
+					background-size:cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					height:100%;
+					width:100%;
 				}
-			}	
+			}
 		}
 	}
 	&__slideBg{
@@ -131,7 +136,7 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 			66%{ transform: rotate(0deg); animation-timing-function: cubic-bezier(0.895, 0.030, 0.685, 0.220); }
 			100%{ transform: rotate(45deg) scale(0.9);}
 		}
-		animation: bgInOut $t*4 -$t*2 infinite; 
+		animation: bgInOut $t*4 -$t*2 infinite;
 	}
 	&__slideContent{
 		position: absolute;
@@ -183,16 +188,14 @@ $images: url('../../imgs/g.jpeg') url('../../imgs/learn.jpg') url('../../imgs/sk
 	line-height: 1;
 	transform: translate3d(0.5vmin, -0.5vmin, 0);
 	transition: all 100ms linear;
-	&:hover{ 
+	&:hover{
 		transform: translate3d(1vmin, -1vmin, 0);
 		box-shadow: -1vmin 1vmin 0 rgba(white, 0.5);
 		background: white;
 		color: black;
 	}
-	&:active{ 
+	&:active{
 		transform: translate3d(0px, 0px, 0);
 		box-shadow: -0px 0px 0 rgba(white, 0.5);
 	}
 }
-
-

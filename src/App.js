@@ -5,6 +5,7 @@ import Home from './comps/home/'
 import {connect} from 'react-redux'
 import {Route} from 'react-router-dom'
 import About from './comps/about/'
+import Store from './comps/store/'
 import {toggle_msg_board} from './redux/actions'
 
 class App extends React.Component{
@@ -52,6 +53,19 @@ class App extends React.Component{
       </div>
           )
       }}/>
+
+
+
+
+      <Route exact path='/store' render={()=>{
+  return (
+<div className="contianer-fluid">
+      <Store />
+
+</div>
+    )
+}}/>
+
 
       </div>
     );

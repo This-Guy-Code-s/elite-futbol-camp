@@ -11,11 +11,16 @@ $color_cloud: #eaeaea;
     color:#000;
   }
 
-
+.container-sessions{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .accordion {
   $accordion: &;
   background: $color_white;
- 
+
   &-tabs {
     display: none;
 		:focus {outline: none;}
@@ -110,7 +115,6 @@ $color_cloud: #eaeaea;
   .accordion-tabs {
     display: flex;
     background: $color_blue__fade;
-
     .accordion-tab {
       background: $color_blue__fade;
       padding: 1rem 2rem;
@@ -177,7 +181,6 @@ $color_cloud: #eaeaea;
 		font-weight: 300;
 		font-size: .9rem;
 		margin-top: 2rem;
-		
+
 	}
 }
-

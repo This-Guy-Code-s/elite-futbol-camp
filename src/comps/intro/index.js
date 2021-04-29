@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import '../../util/styles/sass/intro.scss'
 import {NavLink} from 'react-router-dom'
+import {withRouter} from 'react-router'
 import {toggle_lango} from '../../redux/actions'
 
 
@@ -30,13 +31,13 @@ componentDidMount(){
   background-position:top center;
   background-color:#fff;
   overflow:hidden;
-  `  
+  `
 }
 
 
   render(){
     return (
-   
+
 
 
 <div className="untitled">
@@ -48,7 +49,6 @@ componentDidMount(){
       </div>
       <div className="untitled__slideContent">
       <p className="headzx"><small className="headzx">{this.props.useSpanish?this.props.app_language.intro.spanish['sign-up-msg']:this.props.app_language.intro.english['sign-up-msg']}</small></p>
-        <br/><NavLink className="button" to="/home">{this.props.useSpanish?"Inscribirse":"Sign Up"}</NavLink>
   <NavLink className="button" to="/home"><i className="fas fa-home"></i></NavLink>
       </div>
     </div>
@@ -57,9 +57,8 @@ componentDidMount(){
         <span className="scroll-btn-btn-circle scroll-btn-btn-or btn" onClick={this.props.toggle_lango} >{this.props.useSpanish?"English?":"Española?"}</span>
       </div>
       <div className="untitled__slideContent">
-        
+
          <p className="headzx"><small className="headzx">{this.props.useSpanish?this.props.app_language.intro.spanish['contact-us-msg']:this.props.app_language.intro.english['contact-us-msg']}</small></p>
-        <br/><NavLink className="button" to="/home">{this.props.useSpanish?"Contacta con nosotros":"Contact Us"}</NavLink>
   <NavLink className="button" to="/home"><i className="fas fa-home"></i></NavLink>
       </div>
     </div>
@@ -69,7 +68,6 @@ componentDidMount(){
       </div>
       <div className="untitled__slideContent">
         <p className="headzx"><small className="headzx">{this.props.useSpanish?this.props.app_language.intro.spanish['learn-more-msg']:this.props.app_language.intro.english['learn-more-msg']}</small></p>
-        <br/><NavLink className="button" to="/home" >{this.props.useSpanish?"Aprende más":"Learn More"}</NavLink>
   <NavLink className="button" to="/home"><i className="fas fa-home"></i></NavLink>
       </div>
     </div>
@@ -79,8 +77,7 @@ componentDidMount(){
       </div>
       <div className="untitled__slideContent">
         <p className="headzx"><small className="headzx">{this.props.useSpanish?this.props.app_language.intro.spanish['sports-shop-msg']:this.props.app_language.intro.english['sports-shop-msg']}</small></p>
-        <br/><NavLink className="button" to="/home">{this.props.useSpanish?"Tienda de deportes":"Sports Shop"}</NavLink>
-  <NavLink className="button" to="/home"><i className="fas fa-home"></i></NavLink>
+  <NavLink className="button" to="/store"><i className="fas fa-home"></i></NavLink>
       </div>
     </div>
   </div>
@@ -98,11 +95,8 @@ const mapStateToProps = state =>{
 }
 
 
-export default connect(
+export default withRouter(connect(
 mapStateToProps
 ,
   {toggle_lango}
-  )(Intro)
-
-
-
+  )(Intro))
